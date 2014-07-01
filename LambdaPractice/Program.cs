@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,8 @@ namespace LambdaPractice
                 "Trail Running Shoes", "Cycling Shoes", "Kayak", "Kayak Paddles"};
 
             //declare a variable kayakProducts and set it equal to all products that contain the word "Kayak"
-
+            var KayakProducts = new List<string>().Add( products.where( s => s == "Kayak" ));
+            Console.WriteLine(KayakProducts);
             //print the kayakProducts to the console using a foreach loop.
 
             //declare a variable shoeProducts and set it equal to all products that contain the word "Shoes"
